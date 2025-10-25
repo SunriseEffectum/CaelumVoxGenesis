@@ -1,0 +1,23 @@
+{
+  "name": "caelumvoxgenesis",
+  "version": "1.0.0",
+  "description": "*Later there'll be description of the project*",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunriseEffectum/CaelumVoxGenesis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunriseEffectum/CaelumVoxGenesis/issues"
+  },
+  "homepage": "https://github.com/SunriseEffectum/CaelumVoxGenesis#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
