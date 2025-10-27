@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/data', (req, res) => {
-  res.json({ message: 'Hi from server! CaelumVoxGenesis!', time: Date.now() });
+  res.json({ message: 'Hi from CaelumVoxGenesis!', time: Date.now() });
 });
 
 app.post('/save', (req, res) => {
