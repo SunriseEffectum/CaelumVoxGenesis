@@ -51,14 +51,14 @@ function attack(player_id, attack_type) {
 
       if (attack_type === "gun") {
         let damage = player_attack / (1 + enemy_protection / 100);
-        damage = damage > 1 ? damage : 1;
+        damage = damage > 1 ? Math.ceil(damage) : 1;
         enemy.hp -= damage;
         return 1;
       }
 
       if (attack_type === "rockets") {
         let damage = player_attack * 4 / (1 + enemy_protection / 100);
-        damage = damage > 1 ? damage : 1;
+        damage = damage > 1 ? Math.ceil(damage) : 1;
         enemy.hp -= damage;
         player.rockets -= 1;
         return 1;
@@ -72,13 +72,17 @@ function attack(player_id, attack_type) {
 attack(0, "gun");
 attack(0, "gun");
 attack(0, "gun");
-attack(0, "gun");
+console.log(players.get(0));
 console.log(players.get(1));
 
 attack(1, "rockets");
 attack(1, "rockets");
 attack(1, "rockets");
+console.log(players.get(1));
 console.log(players.get(0));
 
 attack(0, "health");
+attack(0, "health");
+attack(0, "health");
 console.log(players.get(0));
+console.log(players.get(1));
